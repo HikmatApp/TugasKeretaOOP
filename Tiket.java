@@ -1,17 +1,23 @@
 abstract class Tiket {
 
-    private String namaPenumpang;
+    private String nama;
     private String tujuan;
     private int harga;
 
-    public Tiket(String namaPenumpang, String tujuan, int harga) {
-        this.namaPenumpang = namaPenumpang;
+    // Encapsulation
+    private String noHP;
+    private String kodeTiket;
+
+    public Tiket(String nama, String tujuan, int harga, String noHP, String kodeTiket) {
+        this.nama = nama;
         this.tujuan = tujuan;
         this.harga = harga;
+        this.noHP = noHP;
+        this.kodeTiket = kodeTiket;
     }
 
-    public String getNamaPenumpang() {
-        return namaPenumpang;
+    public String getNama() {
+        return nama;
     }
 
     public String getTujuan() {
@@ -20,6 +26,14 @@ abstract class Tiket {
 
     public int getHarga() {
         return harga;
+    }
+
+    public String getNoHP() {
+        return noHP;
+    }
+
+    public String getKodeTiket() {
+        return kodeTiket;
     }
 
     abstract int hitungHarga();
