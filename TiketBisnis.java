@@ -5,7 +5,7 @@ class TiketBisnis extends Tiket implements CetakTiket {
     }
 
     int hitungHarga() {
-        return getHarga() + 50000;
+        return getHarga() + 20000;
     }
 
     public void cetakInfo() {
